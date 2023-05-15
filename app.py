@@ -19,28 +19,21 @@ def index():
     users = User.query.all()
     return render_template("users.html", users=users)
 
-print("whooo")
 @app.route("/add_user", methods=["GET", "POST"])
 def add_user():
-    print(f"Got to add_user with request: {request.method}")
     if request.method == "POST":
         print(request)
         username = request.form.get('username', "Kashy")
-        print(f"Parsed email data: {username}")
         email = request.form.get('email', "kashy@yhsak.io")
-        print(f"Parsed age data: {email}")
         age = request.form.get('age', 27)
-        print(f"Parsed username data: {age}")
-        print("Creating user object")
         user = User(username=username, email=email, age=age)
         db.session.add(user)
         db.session.commit()
-        print("Committing user object to database")
         return redirect(url_for("index"))
     else:
         return render_template("add_user.html")
     
-@app.route("/delete_users", methods=["POST", "DELETE"])
+@app.route("/delete_users", methods=["GET", "POST"])
 def delete_users():
     db.drop_all()
     db.create_all()

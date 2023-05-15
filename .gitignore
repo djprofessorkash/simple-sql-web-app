@@ -4,3 +4,6 @@
 
 # Environment Dependencies
 /myenv/
+
+# Cached Python Configuration Files
+/__pycache__/

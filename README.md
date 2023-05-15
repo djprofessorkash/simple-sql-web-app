@@ -1,5 +1,5 @@
 <h3 align="center">PYTHON PROJECT:</h3>
-<h1 align="center">📝 <b>Simple SQL Web App</b> 🪄</h1>
+<h1 align="center">🧩 <b>Simple SQL Web App</b> 🕸️</h1>
 <h4 align="center">A full-stack web utility for creating and accessing song data from a SQL database.</h4>
 
 ## Description

@@ -7,3 +7,6 @@
 
 # Cached Python Configuration Files
 /__pycache__/
+
+# (TEMPORARY) Environment Variable Configuration
+config.py

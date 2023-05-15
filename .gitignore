@@ -1,3 +1,6 @@
 # Junk Data Files
 .DS_Store
 */.DS_Store
+
+# Environment Dependencies
+/myenv/
